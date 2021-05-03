@@ -1,6 +1,6 @@
 ---
 title: WebKit vs. the Web
-date: '2013-02-17 22:07:25'
+date: '2013-02-17'
 tags:
 - web
 ---

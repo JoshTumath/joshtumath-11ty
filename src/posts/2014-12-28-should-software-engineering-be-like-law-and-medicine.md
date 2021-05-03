@@ -1,6 +1,6 @@
 ---
 title: Should Software Engineering be like Law and Medicine?
-date: '2014-12-28 23:16:51'
+date: '2014-12-28'
 tags:
 - programming
 - web

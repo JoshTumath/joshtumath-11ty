@@ -1,6 +1,6 @@
 ---
 title: The importance of responsive web design
-date: '2013-08-14 23:10:33'
+date: '2013-08-14'
 tags:
 - web
 ---

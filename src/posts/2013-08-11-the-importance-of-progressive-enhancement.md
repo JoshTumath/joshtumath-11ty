@@ -1,6 +1,6 @@
 ---
 title: The importance of progressive enhancement
-date: '2013-08-11 23:21:49'
+date: '2013-08-11'
 tags:
 - web
 ---

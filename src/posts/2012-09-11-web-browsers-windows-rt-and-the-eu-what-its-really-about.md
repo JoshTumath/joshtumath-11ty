@@ -1,6 +1,6 @@
 ---
 title: 'Web browsers, Windows RT and the EU: what it''s really about'
-date: '2012-09-11 22:14:43'
+date: '2012-09-11'
 tags:
 - web
 - microsoft

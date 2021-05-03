@@ -1,6 +1,6 @@
 ---
 title: 'WebPaper: Can the Web replace LaTeX?'
-date: '2013-12-18 01:12:10'
+date: '2013-12-18'
 tags:
 - projects
 ---

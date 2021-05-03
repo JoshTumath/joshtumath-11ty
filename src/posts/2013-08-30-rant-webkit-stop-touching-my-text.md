@@ -1,6 +1,6 @@
 ---
 title: 'Rant: WebKit, stop touching my text!'
-date: '2013-08-30 18:30:45'
+date: '2013-08-30'
 tags:
 - web
 ---

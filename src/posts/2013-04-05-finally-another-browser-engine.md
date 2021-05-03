@@ -1,6 +1,6 @@
 ---
 title: Finally, another browser engine
-date: '2013-04-05 21:46:12'
+date: '2013-04-05'
 ---
 
 Ever since Google Chrome launched in 2008, it has used the layout engine WebKit for dealing with all of the functions a Web browser needs to display Web pages to users. WebKit is very widely used – particularly by mobile Web browsers – and has therefore become one of the main layout engines that Web developers test their Web sites on.

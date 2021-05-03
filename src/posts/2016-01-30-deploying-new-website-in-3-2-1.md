@@ -1,6 +1,6 @@
 ---
 title: Deploying new website in 3... 2... 1...
-date: '2016-01-30 23:08:40'
+date: '2016-01-30'
 tags:
 - website
 ---

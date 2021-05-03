@@ -1,6 +1,6 @@
 ---
 title: 'DRM on the Web: it begins'
-date: '2013-07-06 21:38:24'
+date: '2013-07-06'
 tags:
 - web
 ---

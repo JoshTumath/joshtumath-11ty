@@ -1,6 +1,6 @@
 ---
 title: Why we need to stop hating Internet Explorer
-date: '2013-05-06 21:45:07'
+date: '2013-05-06'
 tags:
 - web
 - microsoft

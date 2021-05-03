@@ -1,6 +1,6 @@
 ---
 title: The curse of IE7
-date: '2013-10-29 19:47:06'
+date: '2013-10-29'
 tags:
 - web
 ---

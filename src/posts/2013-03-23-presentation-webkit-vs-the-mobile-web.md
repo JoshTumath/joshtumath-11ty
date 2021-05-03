@@ -1,6 +1,6 @@
 ---
 title: 'Presentation: WebKit vs. the mobile Web'
-date: '2013-03-23 21:56:23'
+date: '2013-03-23'
 tags:
 - presentations
 - web

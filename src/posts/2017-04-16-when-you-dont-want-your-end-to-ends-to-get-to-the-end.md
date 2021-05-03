@@ -1,6 +1,6 @@
 ---
 title: When you don't want your end-to-ends to get to the end
-date: '2017-04-16 00:30:21'
+date: '2017-04-16'
 tags:
 - bbc
 - bbc-sport

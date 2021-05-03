@@ -1,6 +1,6 @@
 ---
 title: 'Operation convergence: the story of how the W3C and WHATWG fell out'
-date: '2013-07-16 21:30:44'
+date: '2013-07-16'
 tags:
 - web
 ---

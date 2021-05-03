@@ -1,6 +1,6 @@
 ---
 title: Is responsive Web design not possible on "real" Web apps?
-date: '2013-12-17 02:03:39'
+date: '2013-12-17'
 tags:
 - web
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'DRM on the Web: Mozilla lost, but they had to'
 featured: true
-date: '2014-05-15 01:00:24'
+date: '2014-05-15'
 tags:
 - mozilla
 - web
