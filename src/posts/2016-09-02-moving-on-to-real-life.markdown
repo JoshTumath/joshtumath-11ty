@@ -1,5 +1,4 @@
 ---
-
 title: Moving on to Real Life
 date: '2016-09-02 18:24:30'
 tags:

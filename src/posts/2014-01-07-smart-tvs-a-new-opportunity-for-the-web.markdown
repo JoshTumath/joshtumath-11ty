@@ -1,5 +1,4 @@
 ---
-
 title: 'Smart TVs: a new opportunity for the Web'
 date: '2014-01-07 01:58:28'
 tags:

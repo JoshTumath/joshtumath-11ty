@@ -1,5 +1,4 @@
 ---
-
 title: How we grow junior developers at the BBC
 date: '2017-09-19'
 tags:

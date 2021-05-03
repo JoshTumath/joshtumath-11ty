@@ -1,5 +1,4 @@
 ---
-
 title: Teaching the Web in 2013
 date: '2013-07-12 21:34:27'
 tags:

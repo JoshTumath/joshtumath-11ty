@@ -1,5 +1,4 @@
 ---
-
 title: 'There''s Rust in my browser: part 1'
 date: '2014-02-03 17:14:10'
 tags:

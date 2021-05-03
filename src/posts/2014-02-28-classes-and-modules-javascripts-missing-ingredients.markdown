@@ -1,5 +1,4 @@
 ---
-
 title: 'Classes and modules: JavaScript''s missing ingredients'
 date: '2014-02-28 19:32:03'
 tags:
