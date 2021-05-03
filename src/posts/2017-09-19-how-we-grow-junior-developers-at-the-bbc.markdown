@@ -1,12 +1,12 @@
 ---
 
 title: How we grow junior developers at the BBC
-date: '2017-09-19 22:52:51'
+date: '2017-09-19'
 tags:
 - bbc
 ---
 
-![Reverse side of a BBC staff ID card listing the BBC's values.](/assets/images/2017-09-19-bbc-id-card.jpg)
+![Reverse side of a BBC staff ID card listing the BBC's values.](/images/2017-09-19-bbc-id-card.jpg)
 
 I wrote an article for the BBC Design & Engineering blog.
 

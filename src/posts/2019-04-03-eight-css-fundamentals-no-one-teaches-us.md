@@ -1,12 +1,11 @@
 ---
-
 title: Eight CSS fundamentals no one teaches us
-date: '2019-04-03 23:51:00'
+date: '2019-04-03'
 tags:
 - css
 ---
 
-![Someone stands in front of a toolbox, confused about what to do.](/assets/images/2019-04-03-toolbox-confused.png)
+![Someone stands in front of a toolbox, confused about what to do.](/images/2019-04-03-toolbox-confused.png)
 
 When learning to develop for the Web, do you ever feel like you're being taught about all the tools in a toolbox, but not how to actually use them together to build something? If you want to assemble a shed, it's all well and good learning how to use a power drill to drill a hole in a plank of wood, but how do you use that tool along with a screwdriver, a saw to actually build a wall or a roof or a door?
 
@@ -17,7 +16,7 @@ Without a grasp of the fundamentals of how CSS works, most of the many 'tools' w
 These are eight foundational things about CSS that I think make it much easier to understand once you're aware of them.
 
 ## 1. Everything is a box
-![Boxes on the web page are created from the DOM tree.](/assets/images/2019-04-03-dom-boxes.png)
+![Boxes on the web page are created from the DOM tree.](/images/2019-04-03-dom-boxes.png)
 
 After downloading some HTML, your user's Web browser parses it and creates the DOM, or Document Object Model. This is a tree of all the HTML elements on a page. The browser then takes all of these elements in the DOM, and turns them into boxes!
 
@@ -41,11 +40,11 @@ There's quite a lot! But these can be drilled down into two categories:
 
 **Block boxes** are boxes that appear one after the other. This blog post starts with a block containing the heading, a block containing an image, a block containing a paragraph, a block containing a sample of code and so on.
 
-![](/assets/images/2019-04-03-block-boxes.png)
+![](/images/2019-04-03-block-boxes.png)
 
 **Inline boxes** are boxes that appear - as their name would suggest - within lines of text. If some text is _emphasised_, that means it is in a inline box with the CSS property `font-style: italic` set on it.
 
-![](/assets/images/2019-04-03-inline-boxes.png)
+![](/images/2019-04-03-inline-boxes.png)
 
 The CSS `display` property is used to set which type of box a box will be.
 
@@ -68,7 +67,7 @@ Boxes are actually made up of four layers. Starting in the middle, we have:
 3. the border box
 4. the margin box
 
-![](/assets/images/2019-04-03-box-model.png)
+![](/images/2019-04-03-box-model.png)
 
 Most browsers' developer tools will show you a diagram like the one above when you inspect an element. You can of course set the width of these boxes using the `width`/`height`, `padding`, `border-width` and `margin` properties, respectively.
 
@@ -78,7 +77,7 @@ When you use the `width` and `height` properties to set the size of a box, you'r
 
 To picture how boxes are sized in the box model, I always imagine someone pushing against the sides of the box. To set the size the box, they're pushing against the edges of the content box.
 
-![](/assets/images/2019-04-03-box-model-pushed.png)
+![](/images/2019-04-03-box-model-pushed.png)
 
 You can change this behaviour very easily with a CSS property called `box-sizing`. By default, it's set to `box-sizing: content-box`, but you can change the value to `border-box`. This will cause the box to be sized by pushing against the border box, which can make a lot more sense in some situations.
 

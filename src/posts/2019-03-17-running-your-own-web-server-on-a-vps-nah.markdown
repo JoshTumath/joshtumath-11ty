@@ -1,7 +1,7 @@
 ---
 
 title:  "Running your own Web server on a VPS? Nah!"
-date:   2019-03-17 01:16:00 +0000
+date:   '2019-03-17'
 categories: jekyll update
 ---
 
