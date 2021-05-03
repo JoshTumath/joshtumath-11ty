@@ -9,6 +9,11 @@
       "text": "About",
       "url": "/about-me",
       "external": false
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/JoshTumath",
+      "external": true
     }
   ]
 }
