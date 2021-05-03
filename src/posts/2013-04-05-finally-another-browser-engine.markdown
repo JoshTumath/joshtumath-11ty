@@ -1,0 +1,53 @@
+---
+
+title: Finally, another browser engine
+date: '2013-04-05 21:46:12'
+---
+
+Ever since Google Chrome launched in 2008, it has used the layout engine WebKit for dealing with all of the functions a Web browser needs to display Web pages to users. WebKit is very widely used – particularly by mobile Web browsers – and has therefore become one of the main layout engines that Web developers test their Web sites on.
+
+However, many don’t realise that not all WebKit browsers are the same. Some use different versions of WebKit. Others replace certain components of WebKit with their own. It’s unrealistic to assume that if a Web site works in one WebKit browser, then it will work in all of them. Chrome, for example, makes some very large modifications to certain WebKit features. Most famously, it replaces its “Nitro” JavaScript with its own called “V8″.
+
+As I discussed in my [WebKit vs. the Web](http://joshtumath.me.uk/articles/webkit-vs-the-web.html) article, the Web community recently lost a major layout engine when Opera Software gave up developing Presto and decided to fork WebKit and Chromium instead. The news of Presto’s demise was a major blow to Web standards efforts. If the world loses another major layout engine to WebKit, it’s Game Over for competition and interoperable Web standards.
+
+Thankfully, we may not need to worry about that, as Google have announced they will be forking WebKit to create their own layout engine that they have christened “Blink”.
+
+Finally, Google will no longer be hindered by Apple’s priorities when implementing new features in the Web platform. I’ve been rather concerned about Apple’s support of WebKit in recent years, as it is not in the company’s interest to make the Web open and interoperable. Their priorities are directed at iOS and its SDK; they do not want the Web diminishing iOS’s greatest advantage of having the richest app ecosystem out of all the smartphones and tablet operating systems on the market. Google, on the other hand, are primarily a Web advertising company, and it is therefore in their interest to see the Open Web Platform succeed (but I’m sure their management would also like people to use Chrome for advertising purposes).
+
+
+## So what now?
+
+Although Blink is – at the moment – identical to WebKit, we can expect it to heavily deviate in the future. Google have announced they plan on introducing many big changes to certain components of WebKit, such as improving the compositor to support <abbr title="Out-of-process">OOP</abbr> iframes and adding a multi-threaded layout engine. Most of the changes that Google have on their roadmap are intended to provide speed and security improvements, and to clean up the mess that WebKit has become.
+
+They’ve also changed their policies on what new features they should accept and prioritise. In fact, much of this appears to be more akin to Mozilla’s policies, where the good of the Open Web is put first. For example, we shouldn’t expect Google to be adding whatever the heck they want in Blink as Apple have in WebKit. Mozilla recently adopted a policy, where, when they implement a new feature defined in a not-yet-standard specification, they won’t put a vendor prefix in front of it like they and every other browser vendor has in the past (e.g. `<mark>-moz-</mark>border-radius`). Instead, they disable the new feature by default, and it can only be enabled by going to <kbd>about:config</kbd>. This prevents anyone except developers from knowing how to re-enable the feature. Google is adopting a very similar policy, which is great news. This will greatly decrease the mindset that some mobile Web developers have; where they seem to think that everyone uses a WebKit browser and it is therefore OK to use as many exclusive WebKit-only features as they like.
+
+
+## What about Apple?
+
+One interesting thing to note is that Google used to contribute approximately 50% of the development of WebKit, according to Krzysztof Kowalczyk. As he notes, Apple may be very concerned, at the moment, as they’ve just lost 50% of development work. WebKit may no longer be the cheetah of the layout engines, as the press seemed to think it was; quick to support the latest bleeding-edge Web standards. Then again, Apple and Google were said to come into disagreement quite a lot with what should be added to WebKit. Both companies had their own very different priorities and agendas, and it was Apple that had the final say. Perhaps these arguments slowed WebKit’s development down. Google have even admitted that is case, so maybe Google’s departure will have little effect on the speed of WebKit’s development. There are a few other major companies that aid WebKit’s development, so Apple may not need to worry after all.
+
+Or will they? Without a doubt, WebKit is used in more applications than any other; and I’m not just referring to Web browsers. Apps such as Steam and video games such as The Sims 3 use WebKit to embed Web content within their own content. Now thousands of companies have a choice of staying with WebKit or jumping ship to Blink. We already know Opera will now use Blink (once they finally finish their transition from their own Presto engine). Could this mean that WebKit will soon lose the fame and popularity it once had? Many members of the press like to make the hilariously ridiculous claim that the Web would be better off if all browser vendors just moved to WebKit; not understanding the massively negative impact that such a change would have. It wouldn’t surprise me if those same people instantly start suggesting, now, that everyone should use Blink instead. WebKit is seen by many as the greatest layout engine, and some would even become quite aggressive when defending it. I expect many people will be very quick to instantly start siding with Blink and hating WebKit.
+
+I actually believe (perhaps naively) that WebKit will slowly start to die off as a result of this fork. Perhaps that’s just because I have a bias against WebKit, though. Frankly, part of me would be happy to see WebKit die off, due to Apple’s damaging love of vendor prefixes and WebKit’s sometimes shoddy implementations of certain Web standards. Not to mention that Apple as a company seem to be losing the interest of a of their customers, due to their lacklustre offerings in the past couple of years, so we may see a drop in Safari’s usage share as people’s two-year phone contracts come to an end. However, we need WebKit to stay. We can’t afford to lose another layout engine; and this fork may motivate Apple’s executives to take the Web more seriously (keeping in mind that many of their services such as iTunes and Maps are not available on the Web). Apple may become more competitive in the browser market, and return to being a company that contributed actively to the Web platform (albeit in its usual secretive manor).
+
+
+## Anything else?
+
+Another thing to consider is how this will affect the standards process. At the W3C, when a specification is mostly finalised, it becomes a Candidate Recommendation. In order for it to become a Recommendation, very extensive tests must be written for every single feature it defines. Once those tests are all written, at least two layout engines must pass each test. The question is: does Blink count as a separate layout engine? At the moment, it clearly doesn’t, because all of its code is currently almost identical to WebKit’s. But in a couple of months, that will become less clear, as Google begin to implement new specifications differently to how Apple does with WebKit. It will be interesting to see how this plays out.
+
+Many of the changes that Google are making in Blink are to increase multi-threading in the engine. Currently, there is a research project at Mozilla with a similar goal. They are building a brand new Web browser and layout engine completely from scratch with multi-threading in mind. Its codename is “Servo”, and they’ve developed a brand new programming language called “Rust” to develop it. If Mozilla choose to adopt Servo to replace Firefox in its current form, we should expect to see some interesting competition between Mozilla and Chrome. Samsung have also partnered with Mozilla in developing Servo, so – in the long-term – we may see it replacing the stock Android browser in future Samsung phones (which will have a significant impact to browser usage share, considering how many Android phones are made by the company).
+
+The future seems a lot brighter for the Open Web, today. We can expect Blink to heavily deviate from WebKit, in the next 12 months, as the Google devs add the features that they seem to have dreamed to add in the last couple of years. Finally, another browser engine has arrived to increase the healthy competition we need. Finally, the dominance that WebKit has on the mobile Web will shatter as Android devices begin to use Blink in the stock Android Web browser and Chrome for Android*. Finally, Safari for iOS will lose its far too powerful influence on the Web platform. Finally, Web developers will have less of a temptation to rely on vendor-prefixed CSS properties and APIs. This won’t happen quickly, but at least we can say that the Web is on stable ground once again. I’m really excited for what the future holds.
+
+<aside>*Which will take a while, because most Android phones are actually using forks of Android, and therefore take a long time to get the latest updates (or don’t get updated at all!). At the time of writing this article, Android 4.2 is the latest version, and there are still tens of millions of phones running 4.0 and 2.3.*.
+
+</aside>
+## See also
+
+- [Blink](http://www.chromium.org/blink)<span class="author">The Chromium Project</span>
+- [Blink: Developer FAQ](http://www.chromium.org/blink/developer-faq)<span class="author">The Chromium Project</span>
+- [Why What You’re Reading About Blink Is Probably Wrong](http://infrequently.org/2013/04/probably-wrong/)<span class="author">Alex Russell (Google)</span>
+- [Blink](http://robert.ocallahan.org/2013/04/blink.html)<span class="author">Robert O’Callahan (Mozilla)</span>
+- [Thoughts on Blink, Google’s new rendering engine](http://robertnyman.com/2013/04/04/thoughts-on-blink-googles-new-rendering-engine/)<span class="author">Robert Nyman (Mozilla)</span>
+- [Thoughts on Blink](https://medium.com/my-ideas/25a947158087)<span class="author">Krzysztof Kowalczyk</span>
+- [Mozilla and Samsung Collaborate on Next Generation Web Browser Engine](https://blog.mozilla.org/blog/2013/04/03/mozilla-and-samsung-collaborate-on-next-generation-web-browser-engine/)<span class="author">Mozilla</span>
