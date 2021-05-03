@@ -12,8 +12,7 @@ permalink: '/feed.xml'
 	{% endif %}
 	<id>{{ site.url }}</id>
 	<author>
-  <name>{{ site.authorName }}</name>
-  <email>{{ site.authorEmail }}</email>
+    <name>{{ site.authorName }}</name>
 	</author>
 	{% for post in collections.posts %}
   {% set absolutePostUrl %}{{ site.url }}{{ post.url | url }}{% endset %}
