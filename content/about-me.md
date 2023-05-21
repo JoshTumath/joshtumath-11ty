@@ -1,7 +1,8 @@
 ---
-layout: layouts/page.njk
-title: About
-permalink: /about-me/index.html
+layout: layouts/base.njk
+eleventyNavigation:
+  key: About
+  order: 3
 ---
 
 Wow, you’re actually reading this! Hi! Thanks for checking out my blog.
