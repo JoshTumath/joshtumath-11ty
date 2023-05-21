@@ -1,7 +1,7 @@
 ---
 title: Running your own Web server on a VPS? Nah!
 date: '2019-03-17'
-categories: jekyll update
+tags: jekyll update
 ---
 
 For the past three years, I've been running this website on a really cheap

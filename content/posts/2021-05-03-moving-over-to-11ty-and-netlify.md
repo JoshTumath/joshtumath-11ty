@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: Moving over to 11ty and Netlify
 date: 2021-05-03T12:38:45.384Z
 ---

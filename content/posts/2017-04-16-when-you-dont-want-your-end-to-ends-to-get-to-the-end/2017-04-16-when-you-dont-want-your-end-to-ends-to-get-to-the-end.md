@@ -25,7 +25,7 @@ Our existing end to end test runner would simply send off a fake message and the
 
 So because the end to end tests weren't truly testing the system from end to end, we couldn't feel completely confident each time we deploying a new release. And building up more and more changes to a codebase without releasing it is of course very bad. The more it builds up with unreleased changes, the less confident the team is to release it.
 
-![A diagram showing an end to end test runner sending a fake message about a goal to a sport data provider, who sends through various BBC Sport systems that process the data. They tell Mobile Alerts to send a message. However, the message is blocked from finally being sent to the message sender. The test runner keeps polling the deduping database to see if the message has appeared in there yet.](/images/2017-04-16-mobile-alerts-1.png)
+{% image "./2017-04-16-mobile-alerts-1.png", "A diagram showing an end to end test runner sending a fake message about a goal to a sport data provider, who sends through various BBC Sport systems that process the data. They tell Mobile Alerts to send a message. However, the message is blocked from finally being sent to the message sender. The test runner keeps polling the deduping database to see if the message has appeared in there yet." %}
 
 ## Sounds bad! What did you do about it?
 
@@ -33,7 +33,7 @@ Understandably, the tester in our team wasn't too happy about this situation. Th
 
 It was just a very simple Node.js server that would receive alerts sent to it in the same format as they would be in if sent to the real message sending service. The Test Client would store up to 1000 of the most recently received messages in memory. It had a simple REST API that the test runner could use to grab them.
 
-![A diagram similar to previous one, but a new 'fake message sender' service has been added. The test runner polls the fake message sender instead of the deduping database.](/images/2017-04-16-mobile-alerts-test-client.png)
+{% image "./2017-04-16-mobile-alerts-test-client.png", "A diagram similar to previous one, but a new 'fake message sender' service has been added. The test runner polls the fake message sender instead of the deduping database." %}
 
 And that was it! It was a pretty simple solution, but worked like a charm. Some of our end to end tests had to be changed now that they were able to test for the correct behaviour.
 

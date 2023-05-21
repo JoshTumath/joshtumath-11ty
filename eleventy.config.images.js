@@ -1,7 +1,7 @@
 const path = require('path');
 const eleventyImage = require('@11ty/eleventy-img');
 
-const OUTPUT_DIRECTORY = 'images';
+const OUTPUT_DIRECTORY = '/images/';
 
 module.exports = (eleventyConfig) => {
   function relativeToInputPath(inputPath, relativeFilePath) {
@@ -21,6 +21,7 @@ module.exports = (eleventyConfig) => {
     let metadata = await eleventyImage(file, {
       widths: widths || ['auto'],
       formats,
+      urlPath: path.join(OUTPUT_DIRECTORY),
       outputDir: path.join(eleventyConfig.dir.output, OUTPUT_DIRECTORY), // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
     });
 

@@ -5,7 +5,7 @@ tags:
   - bbc
 ---
 
-![Reverse side of a BBC staff ID card listing the BBC's values.](/images/2017-09-19-bbc-id-card.jpg)
+{% image "./2017-09-19-bbc-id-card.jpg", "Reverse side of a BBC staff ID card listing the BBC's values." %}
 
 I wrote an article for the BBC Design & Engineering blog.
 
