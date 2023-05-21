@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/JoshTumath/joshtumath-11ty#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0"
   }
 }
