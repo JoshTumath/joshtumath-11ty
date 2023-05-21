@@ -2,7 +2,7 @@
 title: 'Smart TVs: a new opportunity for the Web'
 date: '2014-01-07'
 tags:
-- web
+  - web
 ---
 
 Recently, our family bought themselves a Samsung Smart TV. As they are not known for being technology-literate, I can’t imagine them making use of its smartness, but it was interesting to use one for the first time. I was surprised to see that all the apps were built using the Web.

@@ -2,19 +2,17 @@
 title: 'Presentation: WebKit vs. the mobile Web'
 date: '2013-03-23'
 tags:
-- presentations
-- web
+  - presentations
+  - web
 ---
 
 This was originally presented at [Aberystwyth University](http://www.aber.ac.uk/) on 2013-02-22.
 
 <script async="" class="speakerdeck-embed" data-id="a399720080ff0130d10012313d21dce8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-
 ## Slide 1
 
 WebKit vs. the mobile Web
-
 
 ## Slide 2
 
@@ -28,7 +26,6 @@ However, it was actually announced in the news on Ash Wednesday that Opera will 
 
 So lets look at the platform that these layout engines run…
 
-
 ## Slide 3
 
 All of these layout engines support the Open Web Platform, which are technologies like HTML and the DOM API. Every layout engine has to support the same standard technologies, because otherwise Web pages would be a nightmare to develop. And this is why the Web platform is such as success: in theory, you can write one piece of HTML or CSS and expect it to look and work in exactly the same way on every layout engine in every browser on every operating system.
@@ -37,7 +34,6 @@ The Open Web Platform is defined in specifications written by members of organis
 
 I’ll explain how standards are created at the W3C…
 
-
 ## Slide 4
 
 Standards are defined in specifications. At the W3C, specifications start out as Working Drafts. As they’re being written and refined, anyone can give feedback and suggest changes or additions.
@@ -45,7 +41,6 @@ Standards are defined in specifications. At the W3C, specifications start out as
 Once the spec is mostly feature complete, it goes into the Last Call stage, where everyone is given a deadline like six months or so to sort out any remaining issues.
 
 When a spec reaches Candidate Recommendation, it’s pretty much done. Now browser vendors can implement the new feature as a finished product, so it doesn’t need to be marked as “experimental”.
-
 
 ## Slide 5
 
@@ -61,7 +56,6 @@ As a result of the war, technologies like CSS and JavaScript were rapidly create
 
 But recently, two well-known companies have started to ignore the W3C. Now there is a new browser war, but this time it’s on smartphones.
 
-
 ## Slide 6
 
 After Microsoft released IE6, they said they weren’t going to develop any new versions. They thought they now had control over the Web and that they had killed it. That meant that innovation in the Open Web Platform had stopped, because the only dominant Web browser – IE6 – wasn’t being updated to support the newest standards. Now that was a scary time! It took five years before Microsoft released IE7, but by then the damage was done.
@@ -69,7 +63,6 @@ After Microsoft released IE6, they said they weren’t going to develop any new 
 Thankfully, the market share is much healthier now and Microsoft have realised that they need to comply with standards to compete with other browsers. But it took a decade for us to get to this point, thanks to the efforts of Mozilla and eventually other browser vendors.
 
 Now lets look at the market share on smartphones and tablets…
-
 
 ## Slide 7
 
@@ -81,7 +74,6 @@ Does this look familiar? This graph almost exactly matches the same one from 200
 
 People always ask me why I don’t use Chrome. Well this is why: I don’t want to be a part of this 86%! Those of you that are using Safari or the built-in Android browser: you should be ashamed! :P A lot of Web developers make the mistake of thinking that market share is important when designing Web sites, but it’s not. They need to design for all Web browsers equally. However, you do need to consider market share when you’re using experimental technologies.
 
-
 ## Slide 8
 
 I’ll give you an example of the experimental features that I was talking about. One of the newest CSS features is transitions, which lets you do things like let backgrounds slowly fade from one colour to another. When browser vendors implement an experimental feature in a W3C spec, they have to put what’s called a “vendor prefix” in front of it. Here’s an example of what a prefix looks like. Once a spec becomes a Candidate Recommendation and a browser vendor has fully implemented it, the prefix has to be removed from their layout engine.
@@ -92,7 +84,6 @@ The problem is: this has example on the left has become a really common practice
 
 But what’s interesting is that the “transition” property – for reasons I’ll explain later – doesn’t have to have the experimental prefix anymore. That means the browser vendors are allowed to stop requiring Web developers to use the prefixes. But – surprise, surprise – WebKit still uses them. Google and Apple are still enforcing authors to use the proprietary prefixes. The whole point of prefixes is to remove them ASAP once the feature is no longer experimental.
 
-
 ## Slide 9
 
 Web developers also make this kind of mistake in JavaScript. The Open Web Platform has been gaining loads of new APIs in the past five years, but not every layout engine will support them straight away.
@@ -101,13 +92,11 @@ What some developers do to get around this is to check what layout engine you’
 
 A better way to do this is using feature detection. With this technique, the developer checks if your layout engine supports the feature he wants you to use. If the engine doesn’t support it, then he uses the workaround.
 
-
 ## Slide 10
 
 And what’s the result of this? If you browse the mobile Web on anything other than WebKit, you will have a crappy experience on many Web sites.
 
 For example, here’s how Facebook’s mobile Web site appears in WebKit. Now here’s how Facebook appears in Firefox for Android and Internet Explorer for Windows Phone. What’s basically happened here is that Facebook can’t be bothered creating their Web site using a technique we call “progressive enhancement”, where Web pages are designed to work on older layout engines, but progressively improve with richer features if your layout engine supports newer and newer technologies. Instead, Facebook has created two versions of their Web site. If you use WebKit, you can use the awesome version. If you use anything else, you get to use the crappy old Web site that was originally designed to be used on feature phones.
-
 
 ## Slide 11
 
@@ -118,7 +107,6 @@ Daniel Glazman, who’s the co-chairman of the W3C’s CSS Working Group thought
 Thankfully, Mozilla and Opera didn’t follow through with their plan. Instead, the CSS Working Group decided break their own policy and allow browser vendors to ship animations, transitions, transforms and gradients without vendor prefixes before their specs became candidate recommendations. This plan didn’t work, though, because – as I said earlier – WebKit is still using the prefixes on them. But there are still loads of properties that have prefixes, and to make matters worse, we can’t remove the prefixes on some of them because Apple has intellectual property rights on them!
 
 Mozilla now has a policy that they won’t release experimental features in Gecko unless they’re switched off by default in Firefox releases. But you can still use them in their Aurora and Nightly builds.
-
 
 ## Slide 12
 

@@ -2,7 +2,7 @@
 title: WebKit vs. the Web
 date: '2013-02-17'
 tags:
-- web
+  - web
 ---
 
 Opera Software announced yesterday that their [Opera Web browser now has over 300 million users](http://www.opera.com/press/releases/2013/02/13/) spread across various devices that the application supports. However, hidden within that press release was far more serious news.
@@ -17,25 +17,23 @@ Now, I don’t use Opera, and nor does most of the Internet population. It’s e
 
 Well, quite a big difference actually. If you think otherwise, then you need to be aware of the serious ramifications this will have on the Open Web Platform.
 
-
 ## Browser Wars: The Sequel
 
-While Opera’s market share on desktops may be small, on mobiles it’s a whole different story. The Opera Mini Web browser (which renders Web sites in the cloud and sends them to the client in a compressed format) has a much stronger share at 9.84% as of January 2013. However, that’s not important. What *is* important is that it has any market share at all.
+While Opera’s market share on desktops may be small, on mobiles it’s a whole different story. The Opera Mini Web browser (which renders Web sites in the cloud and sends them to the client in a compressed format) has a much stronger share at 9.84% as of January 2013. However, that’s not important. What _is_ important is that it has any market share at all.
 
-What many people in the Web development community are failing to notice at the moment is that the *Open* Web Platform is dying. Or — at least — it is on the mobile device market. If we look at the market share recently, we’ll see that most phones and tablets run either iOS or Android.
+What many people in the Web development community are failing to notice at the moment is that the _Open_ Web Platform is dying. Or — at least — it is on the mobile device market. If we look at the market share recently, we’ll see that most phones and tablets run either iOS or Android.
 
 On iOS, users are — of course — restricted as to what they can do on the phone by a “walled garden”. Each app must be downloaded via Apple’s App Store. An app won’t be accepted in the store unless it approved by the company. If an app uses certain APIs that they don’t want third-party developers to use (e.g. the APIs needed to support a Web browser’s layout engine), it can’t appear in the App Store, and users can’t have it. Therefore, users have no choice but to use Safari for Web browsing. Now I know there are some Web browsers in the App Store like Google Chrome, but these are just running an embedded version of WebKit with a different UI around it. They are not running a different layout engine. Opera Mini doesn’t use a layout engine at all; instead, it runs Presto in the cloud and then sends the rendered Web page to the client. The consequence of this is that interactive and animated content normally doesn’t work.
 
 The situation on Android is different. The stock Android browser is used by most Android users. However, Android has a more open app store, and accepts Web browsers with different layout engines. So what’s the second most popular browser on Android? Google Chrome. Oh wait, that uses WebKit as well. The only viable alternative to WebKit browsers is Firefox for Android, which has a negligable market share; even despite some believing that it performs better than the Android browser.
 
-The result of WebKit’s dominance on these two operating systems is that WebKit now commands 86% of the mobile Web as of January 2013. With Opera gone, your only way of using an alternative to WebKit is to either buy an Android phone that is compatible with Firefox for Android or buy a Windows Phone, which only runs Internet Explorer 10. If *you* are an iOS or Android user, I very much doubt you’re going to do that.
+The result of WebKit’s dominance on these two operating systems is that WebKit now commands 86% of the mobile Web as of January 2013. With Opera gone, your only way of using an alternative to WebKit is to either buy an Android phone that is compatible with Firefox for Android or buy a Windows Phone, which only runs Internet Explorer 10. If _you_ are an iOS or Android user, I very much doubt you’re going to do that.
 
 WebKit now has a monopoly over the Open Web Platform.
 
-
 ## So what?
 
-At this point, it’s worth giving a background on what WebKit *is*. WebKit is technically open source. The main contributors in its development are Apple and Google (and perhaps soon Opera Software). Other companies such as Adobe and Nokia also contribute to the code repository, but not as much.
+At this point, it’s worth giving a background on what WebKit _is_. WebKit is technically open source. The main contributors in its development are Apple and Google (and perhaps soon Opera Software). Other companies such as Adobe and Nokia also contribute to the code repository, but not as much.
 
 It may seem nice that all these large corporations are coming together to work on an open source project. In reality, these companies are all contributing for their own benefits and profits. Compliance with Web standards isn’t necessarily their concern. And they tend to clash a lot about new features. From my understanding, Apple tends to be the one with the loudest voice.
 
@@ -55,10 +53,9 @@ Since WebKit has a monopoly in the mobile Web browser market, it’s not uncommo
 <aside> The issue with WebKit’s non-standard CSS properties became so serious that Mozilla (who make Firefox) and Opera considered implementing the experimental (but not the proprietary) CSS properties that WebKit refuses to remove from its code. This concerned Daniel Glazman, the co-chairman of the CSS Working Group, so much that he published a [Call For Action](http://www.glazman.org/weblog/dotclear/index.php?post/2012/02/09/CALL-FOR-ACTION%3A-THE-OPEN-WEB-NEEDS-YOU-NOW) on <time datetime="2012-02-09">2012-02-09</time> to ask Web developers to stop using WebKit’s proprietary prefixes.
 </aside>Eventually, the W3C’s CSS Working Group did specify a standard CSS media query that does the same job, but it was called `min-resolution`. Because the standard property had a different (and better) name, many Web developers that rushed ahead and used WebKit’s proprietary one had no idea that `min-resolution` existed. And even if they did know it existed, WebKit *still doesn’t support it.* Many claim that WebKit has fantastic support for new Web standards, but the truth is that their support is nothing but shoddy! Then again, why should Apple and Google care? WebKit has a monopoly, so Web developers think they only *need* to use features WebKit supports.
 
-A Web controlled by *de facto* standards is bad. On the desktop, this story is different. Web browsers have a more balanced market share, so Web developers know that they need to follow *de joure* standards. When *de joure* Web standards are used, Web developers can be mostly confident that they can write their code once and it will work in all desktop browsers. It’s still important to test in all Web browsers, but problems only usually crop up when using cutting-edge new features that aren’t widely supported; or when testing in older browsers.
+A Web controlled by _de facto_ standards is bad. On the desktop, this story is different. Web browsers have a more balanced market share, so Web developers know that they need to follow _de joure_ standards. When _de joure_ Web standards are used, Web developers can be mostly confident that they can write their code once and it will work in all desktop browsers. It’s still important to test in all Web browsers, but problems only usually crop up when using cutting-edge new features that aren’t widely supported; or when testing in older browsers.
 
 In a world where the market share is evenly split between multiple layout engines, it’s easy to point the finger at a browser vendor that poorly implements a standard feature; and that usually gives them the incentive to fix it. Even Microsoft has brilliant support of Web standards With the loss of Opera, we have one less incentive for WebKit’s developers to support Web standards correctly.
-
 
 ## Why can’t everyone use WebKit?
 
@@ -66,9 +63,9 @@ Many people have suggested that all browser vendors should just scrap their own 
 
 But at what cost?
 
-Firstly, I have already given examples of WebKit’s proprietary and experimental features that have been rushed without being discussed at a W3C Working Group. Having only one layout engine would mean new feature after new feature would be created only for the selfish desires of the companies working on WebKit. Would there be any reason to listen to input from third-parties about the direction of the Open Web Platform? Would it even be called the *Open* Web Platform? Would we even need a standards process if only one vendor implements the “standard”?
+Firstly, I have already given examples of WebKit’s proprietary and experimental features that have been rushed without being discussed at a W3C Working Group. Having only one layout engine would mean new feature after new feature would be created only for the selfish desires of the companies working on WebKit. Would there be any reason to listen to input from third-parties about the direction of the Open Web Platform? Would it even be called the _Open_ Web Platform? Would we even need a standards process if only one vendor implements the “standard”?
 
-Competition between browsers is healthy and important. When browsers are competing for their support of standards, we see benefits for users and Web developers. We see companies like Microsoft feeling proud that they are the ones that first proposed a new standard rather than the ones that created a new awesome feature that they’re keeping to themselves. The competition becomes a race over who can implement a specification first and who gets left behind. Those who *are* left behind are encouraged to pick up the slack and improve their support for more popular new standards.
+Competition between browsers is healthy and important. When browsers are competing for their support of standards, we see benefits for users and Web developers. We see companies like Microsoft feeling proud that they are the ones that first proposed a new standard rather than the ones that created a new awesome feature that they’re keeping to themselves. The competition becomes a race over who can implement a specification first and who gets left behind. Those who _are_ left behind are encouraged to pick up the slack and improve their support for more popular new standards.
 
 Secondly, let’s not forget that all Web browsers are updated independently. Internet Explorer is updated yearly, Firefox is updated every six week, and the various WebKit browsers on mobile devices are updated differently as well. Safari on iOS and the stock Android browser are only updated when the OS receives a feature update. Do device makers care about upgrading your phone’s OS so that you can use the latest version of WebKit? Don’t be silly! Of course they don’t! They’ve got you stuck on a contract for two years. Why should they care about your experience using the phone during that time?
 
@@ -78,10 +75,9 @@ To make that fragmentation worse, each browser can use WebKit differently. For e
 
 There are many other reasons why using one layout engine is bad. See the articles in the [see also](http://joshtumath.me.uk/articles/webkit-vs-the-web.html#see-also) section for more.
 
-The Web standards community is now in a very dangerous and frightening situation. We are now heavily depending solely on Mozilla and Microsoft to fix Web standards on the mobile Open Web Platform and bring the mobile browser market share to healthier values. Mozilla is a trustworthy charity that develops Firefox. They care about supporting Web standards and *want* an even market share. On the other hand, Microsoft is a company that almost ruined the Web during the first browser wars, but appears to have turned over a new leaf. They also have the money and might to bring Windows RT and Windows Phone devices with Internet Explorer 10 to greater market share. If these two organisations fail in increasing their browsers’ market share, our only other hope is to continue encouraging Web developers follow *de joure* Web standards on both desktop *and* mobile, and that plan hasn’t been going well so far.
+The Web standards community is now in a very dangerous and frightening situation. We are now heavily depending solely on Mozilla and Microsoft to fix Web standards on the mobile Open Web Platform and bring the mobile browser market share to healthier values. Mozilla is a trustworthy charity that develops Firefox. They care about supporting Web standards and _want_ an even market share. On the other hand, Microsoft is a company that almost ruined the Web during the first browser wars, but appears to have turned over a new leaf. They also have the money and might to bring Windows RT and Windows Phone devices with Internet Explorer 10 to greater market share. If these two organisations fail in increasing their browsers’ market share, our only other hope is to continue encouraging Web developers follow _de joure_ Web standards on both desktop _and_ mobile, and that plan hasn’t been going well so far.
 
-Is there still hope for *Open* Web Platform on mobile devices? I don’t know, and — to be honest — I’m quite scared about how this will end.
-
+Is there still hope for _Open_ Web Platform on mobile devices? I don’t know, and — to be honest — I’m quite scared about how this will end.
 
 ## See also
 

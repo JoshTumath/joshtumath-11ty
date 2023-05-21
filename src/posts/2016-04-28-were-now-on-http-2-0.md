@@ -2,7 +2,7 @@
 title: We're now on HTTP/2.0
 date: '2016-04-28'
 tags:
-- website
+  - website
 ---
 
 The website has been upgraded to HTTP/2.0, which delivers a much snappier experience when downloading Web pages.

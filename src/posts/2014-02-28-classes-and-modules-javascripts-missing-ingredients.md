@@ -1,9 +1,9 @@
 ---
-title: 'Classes and modules: JavaScript''s missing ingredients'
+title: "Classes and modules: JavaScript's missing ingredients"
 date: '2014-02-28'
 tags:
-- programming
-- web
+  - programming
+  - web
 ---
 
 The development of EcmaScript 6 is coming along smoothly. But with so much talk about iterators, generators, more useful variable declarations using `const` and `let`, arrow functions, default parameters and rest parameters (which are  – admittedly – very exciting new features), there’s very little talk on what – I think – will be the most exciting and influential features of ES6: classes and modules.
@@ -19,16 +19,16 @@ function Animal(name, age, height) {
   this.height = height;
 }
 
-var animal = new Animal("Ben", 20, 31);
-animal.name = "Jerry";
+var animal = new Animal('Ben', 20, 31);
+animal.name = 'Jerry';
 ```
 
 While classes in other languages are fixed and unchanging, in JavaScript, you would create a constructor and then append methods to them later on as prototypes. For example:
 
 ```javascript
 Animal.prototype.toString = function () {
-  return this.name + " " + this.age + " " + this.height;
-}
+  return this.name + ' ' + this.age + ' ' + this.height;
+};
 ```
 
 Class attributes are defined within the constructor. Because JavaScript is very dynamically typed, object attributes can be created and destroyed on-the-fly, so there’s no need to pre-define every single attribute that will be used in the constructor. This is a very odd concept to those used to strictly typed language, but it’s common practice in JavaScript.
@@ -36,7 +36,6 @@ Class attributes are defined within the constructor. Because JavaScript is very
 While defining “classes” like this seems OK, programmers who are used to C++-like classes will be disappointed that there is no obvious concept of privacy – no private or public methods. And having methods defined outside of the constructor seems confusing. There’s no overall block combining the separated attributes, constructor and methods. Inheritance is possible, but it’s not obvious how it’s done.
 
 So while classes in a sense are possible in JavaScript, you may have noticed that, in most libraries, they aren’t actually used.
-
 
 ## Enter ES6 classes
 
@@ -53,12 +52,12 @@ class Animal {
   }
 
   toString() {
-    return this.name + " " + this.age + " " + this.height;
+    return this.name + ' ' + this.age + ' ' + this.height;
   }
 }
 
-var animal = new Animal("Ben", 20, 31);
-animal.name = "Jerry";
+var animal = new Animal('Ben', 20, 31);
+animal.name = 'Jerry';
 ```
 
 Attributes are still defined in the constructor rather than outside it. However, the constructor is now a specially named method within the class, and methods are simply added without a `function` prefix.
@@ -66,7 +65,6 @@ Attributes are still defined in the constructor rather than outside it. However,
 Classes make inheritance much easier. Like Java, ES6 uses the `extends` keyword to inherit properties from other classes. Also, there’s a new special method called `super()` for inheriting from the superclass (this was more difficult in the old way).
 
 But we still have the issue that there is no concept of privacy. Privacy is an integral part of classes. Without it, it defeats the whole point of classes, which is abstraction through encapsulation.
-
 
 ## Let’s have a bit of privacy
 
@@ -89,12 +87,12 @@ class Animal {
   }
 
   toString() {
-    return this[private].name + " " + this[private].age + " " + this[private].height;
+    return this[private].name + ' ' + this[private].age + ' ' + this[private].height;
   }
 }
 
 var animal = new Animal();
-animal.name = "Jerry"; // ERROR!
+animal.name = 'Jerry'; // ERROR!
 ```
 
 `Name` doesn’t seem like the best solution to privacy in JavaScript. It doesn’t give runtime-level privacy of variables, and seems more like a hacked together solution to the problem.
@@ -102,7 +100,6 @@ animal.name = "Jerry"; // ERROR!
 Apparently, [we can expect a new keyword for privacy in ES7](http://esdiscuss.org/topic/es6-problem-with-private-name-objects-syntax#content-1), but that means at least a couple-of-years wait before we see that being prototyped in browsers.
 
 So for now, I think trusting developers is the best solution at the moment. Maybe someone will come up with a macro.
-
 
 ## Import “modules”;
 
@@ -123,7 +120,7 @@ export class Animal {
   }
 
   toString() {
-    return this.name + " " + this.age + " " + this.height;
+    return this.name + ' ' + this.age + ' ' + this.height;
   }
 }
 ```
@@ -139,7 +136,7 @@ Importing is simple too. Let’s say this is our directory structure for our Web
 Normally, we’d have to add two `script` elements to link to both of these files. However, using modules, there’s just one thing we need to add to the main.js file:
 
 ```javascript
-import "classes/Animal";
+import 'classes/Animal';
 
 var animal = new Animal();
 // do stuff...
@@ -148,7 +145,6 @@ var animal = new Animal();
 Modules are named after their relative directory structure, but don’t include a file extension.
 
 There’s so much more capability that modules have, but that’s the basics of how they work. They are a very powerful tool.
-
 
 ## And now we wait
 

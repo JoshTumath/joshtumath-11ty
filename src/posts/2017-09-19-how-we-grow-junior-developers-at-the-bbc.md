@@ -2,7 +2,7 @@
 title: How we grow junior developers at the BBC
 date: '2017-09-19'
 tags:
-- bbc
+  - bbc
 ---
 
 ![Reverse side of a BBC staff ID card listing the BBC's values.](/images/2017-09-19-bbc-id-card.jpg)

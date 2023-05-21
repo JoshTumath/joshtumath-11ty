@@ -1,9 +1,9 @@
 ---
-title: 'Web browsers, Windows RT and the EU: what it''s really about'
+title: "Web browsers, Windows RT and the EU: what it's really about"
 date: '2012-09-11'
 tags:
-- web
-- microsoft
+  - web
+  - microsoft
 ---
 
 As you no doubt already know, Microsoft has had a number of spats with the European Union this past summer. While they sorted out the disappearance of the browser ballot screen on Windows 7 SP1 and Windows 8, a more recent issue still remains. However, this issue is not with Windows 8 as such, but, rather, Microsoft’s newest operating system: the confusingly named Windows RT. While this OS may look the same as Windows 8 on the covers, underneath it actually runs on the ARM processor architecture and therefore cannot run desktop apps.
@@ -12,10 +12,9 @@ Recently, Mozilla and Google both raised a complaint to the EU that they won’t
 
 I wanted to write this article to help people understand exactly what Mozilla and Google are actually complaining about, because there is one technical aspect of Windows 8 and Windows RT that I have never seen any of the press mention. Windows 8 has two types of apps, right? The new Windows Store apps based on the WinRT APIs and desktop apps based on the Win32 APIs? Wrong! There is a third type app, and this is one that Microsoft don’t want to mention much because most developers won’t be able to make this type of app anyway. It’s called a “New experience enabled desktop browser” (which is clearly the most long-winded and unimaginative name for an app-type ever).
 
-
 ## New experience enabled desktop browsers
 
-Now before I go into detail on what a “new experience enabled desktop browser” is, let’s be clear on something: *Mozilla and Google are not interested in putting the desktop version of their apps on Windows RT.* All they want is to be able to let users install the Windows Store app versions of Firefox and Chrome on Windows RT.
+Now before I go into detail on what a “new experience enabled desktop browser” is, let’s be clear on something: _Mozilla and Google are not interested in putting the desktop version of their apps on Windows RT._ All they want is to be able to let users install the Windows Store app versions of Firefox and Chrome on Windows RT.
 
 I remember when the Windows 8 Developer Preview was first announced at Build 2011. Now, being a not-for-profit, Mozilla like to do their software development out in the open, so I was able to watch as the Moz Devs looked all over the new app platform to see how they could get Firefox to work on it. They showed excitement at the possibility of re-writing parts of Firefox in the new WinRT APIs. But during their research, they realised that the WinRT APIs had certain limitations that prevented them from putting Firefox on Windows 8. They couldn’t use things like JIT compilation, which is basically something they use to make Web pages with heavy use of JavaScript run faster. They also couldn’t have multiple background processes running inside one app. Loads of limitations like these kept cropping up during their research, despite the fact that the old APIs for making desktop apps — the Win32 APIs — allowed them to do this.
 
@@ -27,12 +26,11 @@ However, there was a catch. The Windows Store app version of a Web browser can o
 
 New experience enabled desktop browsers also have an important limitation: because they are still desktop apps underneath, they cannot be installed directly from the Windows Store. They must be installed the traditional way.
 
-
 ## What about the EU?
 
-So it’s quite clear that Mozilla and Google have no issue with implementing their browsers on Windows 8; they have just as many capabilities as IE10 has available. But on Windows RT, it’s a different story. The fact is that you will not be able to install Windows Store app versions of Firefox and Chrome on Windows RT. Is this because Microsoft doesn’t want you to install third-party Web browsers on Windows RT, as with Apple and iOS? No. The reason why is because new experience enabled desktop browsers are still part-desktop apps, and Microsoft doesn’t allow any type of desktop app to be installed on Windows RT. While I’m sure they would *want* to allow browser vendors to install new experience enabled desktop browsers on Windows RT in order to get the EU off their backs, the only way they can is by enabling the installation of *any* desktop app, which is clearly not the ideal solution (or rather, not *their* ideal solution).
+So it’s quite clear that Mozilla and Google have no issue with implementing their browsers on Windows 8; they have just as many capabilities as IE10 has available. But on Windows RT, it’s a different story. The fact is that you will not be able to install Windows Store app versions of Firefox and Chrome on Windows RT. Is this because Microsoft doesn’t want you to install third-party Web browsers on Windows RT, as with Apple and iOS? No. The reason why is because new experience enabled desktop browsers are still part-desktop apps, and Microsoft doesn’t allow any type of desktop app to be installed on Windows RT. While I’m sure they would _want_ to allow browser vendors to install new experience enabled desktop browsers on Windows RT in order to get the EU off their backs, the only way they can is by enabling the installation of _any_ desktop app, which is clearly not the ideal solution (or rather, not _their_ ideal solution).
 
-So if the EU rule that Microsoft *must* allow browser vendors to install new experience enabled desktop browsers on Windows RT, Sinofsky and the gang will be left with a puzzle: How can they allow new experience enabled desktop browsers to be installed on Windows RT without allowing other third-party apps on the desktop?
+So if the EU rule that Microsoft _must_ allow browser vendors to install new experience enabled desktop browsers on Windows RT, Sinofsky and the gang will be left with a puzzle: How can they allow new experience enabled desktop browsers to be installed on Windows RT without allowing other third-party apps on the desktop?
 
 And that’s what this boils down to. I hope that helped to give you now have a better understanding of what this debate is really about.
 

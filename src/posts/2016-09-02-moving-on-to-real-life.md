@@ -2,7 +2,7 @@
 title: Moving on to Real Life
 date: '2016-09-02'
 tags:
-- university
+  - university
 ---
 
 ![Photo of all the graduates of the Aberystwyth University Computer Science Department, class of 2016.](/images/2016-09-02-graduation.jpg)

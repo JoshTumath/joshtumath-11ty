@@ -2,14 +2,15 @@
 title: When you don't want your end-to-ends to get to the end
 date: '2017-04-16'
 tags:
-- bbc
-- bbc-sport
-- testing
+  - bbc
+  - bbc-sport
+  - testing
 ---
 
 Here's the situation: You've got a service that's used by millions of people. You've got a great coverage of unit tests, integration tests, smoke tests and acceptance tests for it. However, in the real world, this service is combined with lots of other services to work correctly, so you need an end-to-end test suite as well to be 99.9% confident that you're safe to deploy a new version. However, if the test is truly end-to-end, it will start sending out fake test data to your millions of users every time you run it! Disaster!
 
 ## So what's this about?
+
 I've been working at the BBC for about seven months now. I've recently moved to the Children's Web team, but for my first six months, I was with the Sport & Live Services team. Our role was basically to develop and maintain all of the underlying services and APIs used by other development teams in Sport & Live and the wider BBC. (Some of the stuff they're working on is pretty exciting and pioneering!)
 
 One of these services we maintained was the imaginatively named Mobile Alerts for sending off push notifications to users who are subscribed to results for their favourite sports teams. When sending notifications to potentially millions of devices, you understandably want to be a bit careful about making sure it's always working correctly -- particularly as you can't 'unsend' a notification after pushing it out. There are three major risks that we have to look out for:
@@ -27,6 +28,7 @@ So because the end to end tests weren't truly testing the system from end to end
 ![A diagram showing an end to end test runner sending a fake message about a goal to a sport data provider, who sends through various BBC Sport systems that process the data. They tell Mobile Alerts to send a message. However, the message is blocked from finally being sent to the message sender. The test runner keeps polling the deduping database to see if the message has appeared in there yet.](/images/2017-04-16-mobile-alerts-1.png)
 
 ## Sounds bad! What did you do about it?
+
 Understandably, the tester in our team wasn't too happy about this situation. The solution that we came up with was to make a fake message receiver for the messages in the place of the real message sending service. We called it the imaginatively named 'Mobile Alerts Test Client'.
 
 It was just a very simple Node.js server that would receive alerts sent to it in the same format as they would be in if sent to the real message sending service. The Test Client would store up to 1000 of the most recently received messages in memory. It had a simple REST API that the test runner could use to grab them.

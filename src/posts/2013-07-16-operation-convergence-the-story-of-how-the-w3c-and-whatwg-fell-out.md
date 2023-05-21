@@ -2,11 +2,10 @@
 title: 'Operation convergence: the story of how the W3C and WHATWG fell out'
 date: '2013-07-16'
 tags:
-- web
+  - web
 ---
 
 On 19th July 2012, a fissure was created between the W3C and the WHATWG; the two most important standards organisations leading the development of the Open Web Platform.
-
 
 ## A history lesson
 
@@ -16,10 +15,9 @@ Ultimately, a Web standard is only a standard if Web browsers support it in thei
 
 The two working groups worked well together in forming and shaping HTML5, with both parties’ interests in mind. The WHATWG ultimately handled the editing of the spec, and the W3C would copy it, split it up into smaller modular specifications where appropriate, and publish the specifications in Working Drafts in the W3C process that we’re all so used to. Both groups had means of allowing non-members from contributing to their discussions, and, if there was a general disagreement at the HTMLWG with something in the WHATWG spec, the HTMLWG chairs would ask the WHATWG editor to change it.
 
-
 ## Tensions rising
 
-Of course, it was never happy families. The W3C process involved members from many companies and organisations trying to reach consensus on various issues. On the other hand, the WHATWG process is *Ian Hickson*.
+Of course, it was never happy families. The W3C process involved members from many companies and organisations trying to reach consensus on various issues. On the other hand, the WHATWG process is _Ian Hickson_.
 
 Ian Hickson is the sole Editor of the [HTML Living Standard](http://www.whatwg.org/html) spec, and it’s a very large spec to edit! Many of his ideas have been the foundation of HTML5, such as the standard HTML parser that is now used in all major browser engines.
 
@@ -37,8 +35,7 @@ This is how the [WHATWG’s official FAQ](http://wiki.whatwg.org/wiki/FAQ#How_do
 
 While that’s obviously more tongue-and-cheek, there is some truth in it. In my opinion, Hickson pretty much always makes the right call.
 
-However, there are some times where *many* have disagreed with him, but he has stuck with his decision because he believes it is the right call. Anyone that knows about the controversies surrounding `time`, `hgroup`, `srcset` and `main` knows the kind of incidents I’m referring to. Those four have been the most high-profile incidents where Hickson has put his foot down. I’ll get back to them in a moment.
-
+However, there are some times where _many_ have disagreed with him, but he has stuck with his decision because he believes it is the right call. Anyone that knows about the controversies surrounding `time`, `hgroup`, `srcset` and `main` knows the kind of incidents I’m referring to. Those four have been the most high-profile incidents where Hickson has put his foot down. I’ll get back to them in a moment.
 
 ## Fragmentation
 
@@ -58,22 +55,20 @@ Let me give you an example of how bad the fork is. I proposed my idea for `defer
 
 So in other words, there were two separate discussions about the pros and cons of my suggestion (I didn’t see the W3C’s discussions because it was eventually dealt with by a different working group), and both discussions probably mentioned many of the same things. I dread to think of the many other redundant discussions that took place as a result of operation convergence.
 
-
 ## The aftermath
 
 In the aftermath of operation convergence, things seem to have turned very bitter.
 
-For many years now, a HTML element has been proposed called `main`, but it was never included in the HTML spec because Ian Hickson didn’t see a need for it. However, following the split, the new HTMLWG editors *did* see a need for it, and included it in HTML5. The element quickly became widely used, so Hickson was given no choice but to include it in the WHATWG spec.
+For many years now, a HTML element has been proposed called `main`, but it was never included in the HTML spec because Ian Hickson didn’t see a need for it. However, following the split, the new HTMLWG editors _did_ see a need for it, and included it in HTML5. The element quickly became widely used, so Hickson was given no choice but to include it in the WHATWG spec.
 
 However, there was a huge difference in each spec’s definition of the element.
 
-* **W3C definition:** The `main` element represents the main content of the `body` of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application.
-* **WHATWG definition:** The `main` element can be used as a container for the dominant contents of another element. It represents its children.
+- **W3C definition:** The `main` element represents the main content of the `body` of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application.
+- **WHATWG definition:** The `main` element can be used as a container for the dominant contents of another element. It represents its children.
 
 According to the W3C, the `main` element represents the main content of the Web page. This is useful, mainly because it allows blind users using assistive technology to skip through a page’s logo and navigation and get to the content of the page. However, the WHATWG’s definition is ambiguous and makes the element no more useful than a `div`. It’s no surprise that Web developers go by the W3C’s definition.
 
 If you’d like something to read in bed this evening, read this [childish argument between Steve Faulkner, editor of the W3C HTML spec, and Ian Hickson](http://html5doctor.com/the-main-element/#comment-35758). The debate gets to the point where Hickson remarks: “I’m not responding to Steve any more since he’s obviously just trolling me with statements he must surely know are incorrect.)” In this case, I shared my opinion with Faulkner. However, there are some times where I believe that the WHATWG spec uses a better definition of a feature. There is no clear side to turn to. And when you see members from both groups arguing like that, that makes it even more appalling.
-
 
 ## Conclusion
 

@@ -1,9 +1,9 @@
 ---
-title: 'There''s Rust in my browser: part 2'
+title: "There's Rust in my browser: part 2"
 date: '2014-02-04'
 tags:
-- programming
-- web
+  - programming
+  - web
 ---
 
 At [Mozilla Research](https://www.mozilla.org/en-US/research/), two research projects are underway – probably two of the most important things going on with the Web today. These projects are Rust and Servo. In part two of this series, I’m going to be talking about Servo.

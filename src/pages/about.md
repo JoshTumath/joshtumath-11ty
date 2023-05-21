@@ -3,6 +3,7 @@ layout: layouts/page.njk
 title: About
 permalink: /about-me/index.html
 ---
+
 Wow, you’re actually reading this! Hi! Thanks for checking out my blog.
 
 I’m a Senior Software Engineer in the Design System team of the [BBC Product Group](https://careers.bbc.co.uk/content/What-We-Do/?locale=en_GB). We are rebuilding almost the entire website to work on a shared design system and a common framework and platform. It’s exciting stuff! I’m based in MediaCityUK, Salford.

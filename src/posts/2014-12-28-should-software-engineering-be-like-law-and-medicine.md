@@ -2,9 +2,9 @@
 title: Should Software Engineering be like Law and Medicine?
 date: '2014-12-28'
 tags:
-- programming
-- web
-- university
+  - programming
+  - web
+  - university
 ---
 
 One of the developers I follow on Twitter who works on the [Rust](http://www.rust-lang.org/) compiler posted an interesting thought today:
@@ -32,10 +32,10 @@ However, while that may make a lot of people’s lives easier, it’s not as if 
 
 Every project should have heavy reliance on version control. And, more importantly, code reviews. This is something that so many companies avoid, and yet has such high importance in open source projects and in big industry players. Even the best novel writers have proofreaders, and so should we. Each project or module should be “owned” by a senior developer who knows the code really well. They would be able to check the tree for anything “bad” in recent patches and review and give feedback on any larger patches before they get pushed to the tree. This would help less experienced developers to really grow their skills and prevent (most) poorly written code from coming back to bite you later on.
 
-Finally, now that governments across the world are realising increasing demand and importance in Computer Science, even Primary School children are being taught the basics of coding. All children in born the UK this year will know how to code in a major programming language before they even start their GCSEs. In the long-term, limiting Computer Science degrees to just the A* A-Level students (and equivalent) like with Law and Medicine just seems backwards.
+Finally, now that governments across the world are realising increasing demand and importance in Computer Science, even Primary School children are being taught the basics of coding. All children in born the UK this year will know how to code in a major programming language before they even start their GCSEs. In the long-term, limiting Computer Science degrees to just the A\* A-Level students (and equivalent) like with Law and Medicine just seems backwards.
 
 It’s odd to think that, one day, what I learned in my first semester at University will be considered Year 8 level. By then, Computer Science courses at universities are probably going to be a lot more technical in First Year. It won’t be so much a question of “Who knows how to code?” but rather, “Who’s familiar with the concept of Big O notation?”
 
 In the Web development company where I currently work, the designers have started learning HTML and CSS. After completing the photoshopped mock-ups of new websites, they must code up the mock-up. Having an in-depth understanding of what you can do and what the limits are in the Web platform deeply affects how a website is designed (especially when you realise that centring a box vertically within another box actually isn’t that simple!). Even in the UK Government, [pretty much everyone in GDS can code](https://designnotes.blog.gov.uk/2014/10/13/how-designers-prototype-at-gds/)!
 
-So to me, while software engineering definitely is a highly-skilled job that not everyone is *great* at, the solution to a lot of problems in the profession at the moment is not to employ only *very* highly-skilled developers. Rather, the solution is to make sure it’s a skill **everyone** has, even if we have to wait a while for that to happen.
+So to me, while software engineering definitely is a highly-skilled job that not everyone is _great_ at, the solution to a lot of problems in the profession at the moment is not to employ only _very_ highly-skilled developers. Rather, the solution is to make sure it’s a skill **everyone** has, even if we have to wait a while for that to happen.

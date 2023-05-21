@@ -2,7 +2,7 @@
 title: Eight CSS fundamentals no one teaches us
 date: '2019-04-03'
 tags:
-- css
+  - css
 ---
 
 ![Someone stands in front of a toolbox, confused about what to do.](/images/2019-04-03-toolbox-confused.png)
@@ -16,6 +16,7 @@ Without a grasp of the fundamentals of how CSS works, most of the many 'tools' w
 These are eight foundational things about CSS that I think make it much easier to understand once you're aware of them.
 
 ## 1. Everything is a box
+
 ![Boxes on the web page are created from the DOM tree.](/images/2019-04-03-dom-boxes.png)
 
 After downloading some HTML, your user's Web browser parses it and creates the DOM, or Document Object Model. This is a tree of all the HTML elements on a page. The browser then takes all of these elements in the DOM, and turns them into boxes!
@@ -31,12 +32,13 @@ We can see this for ourselves by adding a border around every element.
 ```
 
 ## 2. Every box is laid out in 'the flow' by default
+
 There are different types of boxes in our toolbox. Inline boxes, block boxes, flex boxes, grid boxes, table boxes, list-item boxes, inline-block boxes, inline-grid boxes, inline-flex boxes....
 
 There's quite a lot! But these can be drilled down into two categories:
 
-* Block boxes
-* Inline boxes
+- Block boxes
+- Inline boxes
 
 **Block boxes** are boxes that appear one after the other. This blog post starts with a block containing the heading, a block containing an image, a block containing a paragraph, a block containing a sample of code and so on.
 
@@ -50,7 +52,7 @@ The CSS `display` property is used to set which type of box a box will be.
 
 ```css
 .poster-image {
-  display: block
+  display: block;
 }
 ```
 
@@ -148,7 +150,7 @@ But what if you want the box to be positioned relative to another box rather tha
 
 <body>
   <aside class="ad">
-    <img src="free-pizza.jpg" alt="Free pizza!!!">
+    <img src="free-pizza.jpg" alt="Free pizza!!!" />
     <button>Close</button>
   </aside>
 </body>

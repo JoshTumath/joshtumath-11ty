@@ -1,17 +1,16 @@
 ---
-title: 'There''s Rust in my browser: part 1'
+title: "There's Rust in my browser: part 1"
 date: '2014-02-03'
 tags:
-- programming
-- web
+  - programming
+  - web
 ---
 
 At [Mozilla Research](https://www.mozilla.org/en-US/research/), two research projects are underway – probably two of the most important things going on with the Web today. These projects are Rust and Servo. In part one of this series, I’m going to be talking about Rust.
 
-Rust is a programming language that’s still under development. It’s at version 0.9, as of writing. You could say it’s a very unique mixture of procedural-ish programming with object-orientation-ish methods and pure functional programming. But, more importantly, it’s designed to be completely memory-safe (i.e. prevents memory leaks by design) and easily concurrent (i.e. multi-processing and multi-threading) – all without having a complex and bulky runtime system *cough* Java *cough* running behind-the-scenes.
+Rust is a programming language that’s still under development. It’s at version 0.9, as of writing. You could say it’s a very unique mixture of procedural-ish programming with object-orientation-ish methods and pure functional programming. But, more importantly, it’s designed to be completely memory-safe (i.e. prevents memory leaks by design) and easily concurrent (i.e. multi-processing and multi-threading) – all without having a complex and bulky runtime system _cough_ Java _cough_ running behind-the-scenes.
 
 That’s not to say Rust is basic and bare-bones like C, either. The syntax may be similar, but it’s fundamentally different in many ways.
-
 
 ## Testing the water
 
@@ -46,7 +45,6 @@ fn main() {
 ```
 
 Earlier, I mentioned `println` has an exclamation mark. This means it is actually a macro. These extend the syntax to allow you to do repetitive actions that couldn’t be put in a normal function.
-
 
 ## Getting deeper
 
@@ -97,7 +95,7 @@ In a sense, classes in languages like C++ and Java really are just structs with 
 
 Traits extend this even more. They’re similar to interfaces and abstract classes in C++-like languages. They allow specifying what functions should appear in an `impl`, and – optionally – what code they should run.
 
-Typical for loops do not exist in Rust for safety reasons. Normally, for loops are used to increment an integer each cycle and then stop after reaching a certain value. However, Rust *does* have what other languages would call “for each” loops. These are much easier to use. You can simulate a typical C-like loop like so:
+Typical for loops do not exist in Rust for safety reasons. Normally, for loops are used to increment an integer each cycle and then stop after reaching a certain value. However, Rust _does_ have what other languages would call “for each” loops. These are much easier to use. You can simulate a typical C-like loop like so:
 
 ```c
 // ANSI C
@@ -109,6 +107,7 @@ void my_loop() {
   }
 }
 ```
+
 ```rust
 // Rust
 fn my_loop() {
@@ -121,7 +120,6 @@ fn my_loop() {
 `range()` is a function in the standard library that creates an iterator through the values you specify. In this case: 0 to 9. It fills in for most of the use-cases of a typical C-like for loop, and is much easier to understand.
 
 The language also has an optional garbage collector, and – by optional – I mean you can choose which functions use it (but you’re probably better off without it).
-
 
 ## Rust is hard
 
