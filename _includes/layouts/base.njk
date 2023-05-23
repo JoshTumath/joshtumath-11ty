@@ -32,10 +32,10 @@
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 	</head>
-	<body>
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
+	<body>
 		<header>
+		  <a href="#skip" class="visually-hidden">Skip to main content</a>
 			<a href="/" class="home-link">{{ metadata.title }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
