@@ -33,6 +33,7 @@
     "luxon": "^3.3.0",
     "markdown-it-anchor": "^8.6.7",
     "stylelint": "^15.6.2",
+    "stylelint-config-recess-order": "^4.0.0",
     "stylelint-config-standard": "^33.0.0"
   }
 }
