@@ -5,13 +5,9 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
 
-/* Remove all animations and transitions for people who prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  /* Remove all animations and transitions for people who prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;

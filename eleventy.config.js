@@ -7,6 +7,7 @@ const pluginBundle = require('@11ty/eleventy-plugin-bundle');
 const pluginNavigation = require('@11ty/eleventy-navigation');
 const { EleventyHtmlBasePlugin, EleventyRenderPlugin } = require('@11ty/eleventy');
 
+const pluginCss = require('./eleventy.config.css.js');
 const pluginDrafts = require('./eleventy.config.drafts.js');
 const pluginImages = require('./eleventy.config.images.js');
 
@@ -25,6 +26,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('content/**/*.{svg,webp,png,jpeg}');
 
   // App plugins
+  eleventyConfig.addPlugin(pluginCss);
   eleventyConfig.addPlugin(pluginDrafts);
   eleventyConfig.addPlugin(pluginImages);
 
