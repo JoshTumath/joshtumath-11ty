@@ -52,6 +52,8 @@ And there were other issues using `box-shadow`:
 
 - The `box-shadow` can't be offset. It must come out from the very edge of the box. If I want there to be a 2px gap between the edge of the box and the start of a shadow, that's not possible.
 
+I'm quite sure focus rings are not the only use case for `stripes()`, either. There are, no doubt, many aesthetic reasons why it would be useful to have a `border` made up of multiple stripes.
+
 ## A workaround
 
 As a workaround to the lack of support for `stripes()`, we had to use a mixture of `outline` and `box-shadow`. The outer stripe is the outline and the inner stripe is created by the shadow.
@@ -64,14 +66,14 @@ As a workaround to the lack of support for `stripes()`, we had to use a mixture 
 }
 ```
 
-This workaround works fairly well, but falls apart when a focusable element on the page also sets a `box-shadow`, thereby removing the `box-shadow` used to create the focus ring. And there's nothing, really, that can be done about that.
-
-I'm quite sure focus rings are not the only use case for `stripes()`, either. There are, no doubt, many aesthetic reasons why it would be useful to have a `border` made up of multiple stripes.
+This workaround works fairly well. In forced high contrast mode, while the shadow disappears, the outline remains. However, it falls apart when a focusable element on the page also sets a `box-shadow`, thereby removing the `box-shadow` used to create the focus ring. And there's not really anything you can do about that.
 
 ## The `stripes()` function can save the day
 
 In conclusion, our users would all clearly benefit if we were able to use the `stripes()` function. Having it would allow us to make much more accessible websites for partially sighted users, keyboard-navigation users, while unlocking more design options as well.
 
 In the world of web standards, you can write as many specifications as you want, but without interest from browser vendors, a proposal is unlikely to be supported. There are currently quite a few of [unresolved issues on the CSSWG's GitHub repo](https://github.com/w3c/csswg-drafts/issues?q=is%3Aissue+is%3Aopen+stripes) around how `stripes()` will work, none of them are stopping browser vendors from expressing interest in supporting it. And with interest, there will be greater priority from them in resolving any issues that are blocking implementation.
+
+You can show your demand for the `stripes()` function by 'starring' or 'voting' for the issue on the browser vendors' issue trackers. Here are links to the [Chromium issue](https://issues.chromium.org/issues/41484211), the [Mozilla bug](https://bugzilla.mozilla.org/show_bug.cgi?id=1848458) and the [WebKit bug](https://bugs.webkit.org/show_bug.cgi?id=277549).
 
 I know accessibility may not be as exciting as [mesh gradients](./2024-06-11-mesh-gradients-in-css.md) or [view transitions](https://developer.chrome.com/docs/web-platform/view-transitions), but it's obviously a priority for all of us. So, web developers, if you want to see support for `stripes()`, please start banging the drum! Start talking about your own use cases and interest in it. With enough interest from web developers, the browser vendors _will_ notice.
