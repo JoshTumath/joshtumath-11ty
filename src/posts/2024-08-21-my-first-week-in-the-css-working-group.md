@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: "My first week in the CSS Working Group"
-date: 2024-08-21T14:25:45.384Z
+title: 'My first week in the CSS Working Group'
+date: 2024-08-21
 ---
 
 Last week, I joined the [CSS Working Group](https://www.w3.org/Style/CSS/) at the W3C, representing the BBC.
