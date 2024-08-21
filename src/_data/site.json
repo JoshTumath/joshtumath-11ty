@@ -7,6 +7,5 @@
   "authorHandle": "@JoshTumath",
   "authorName": "Josh Tumath",
   "enableThirdPartyComments": false,
-  "maxPostsPerPage": 5,
-  "faviconPath": "/images/favicon.png"
+  "maxPostsPerPage": 5
 }
