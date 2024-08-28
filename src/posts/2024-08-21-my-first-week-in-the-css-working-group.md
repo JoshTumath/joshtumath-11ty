@@ -12,21 +12,19 @@ As with all W3C working groups, the CSSWG is made up of members from different o
 
 ## My story
 
-I've met a few of the CSSWG members over the years at various conferences - especially CSS Day in Amsterdam. They're all clearly passionate about the web platform and I would always enjoy hearing how they went about solving problems.
+My first forays into web development were about 18 years ago, using tools like Microsoft FrontPage and Dreamweaver, making table layouts designed to work on IE6. In those days, it was common to see websites proclaiming in their footers that they'd been validated by the [W3C Validator](https://validator.w3.org/) and that they work best in Firefox. From this, I read up about standards compliance and the [browser wars](https://en.wikipedia.org/wiki/Browser_wars) and learnt a lot about web standards, which led me to spend a lot of time over the years reading the specifications to learn about new features.
 
-My first forays into web development were about 18 years ago, using tools like Microsoft FrontPage and Dreamweaver, making table layouts designed to work on IE6. In those days, it was common to see websites proclaiming in their footers that they'd been validated by the [W3C Validator](https://validator.w3.org/) and that they work best in Firefox. After reading all of these messages about standards compliance and the [browser wars](https://en.wikipedia.org/wiki/Browser_wars), I learnt a lot about web standards, which led me to spend a lot of time reading the specifications to learn about new features.
+I'd met a few of the CSSWG members over the years at various conferences - especially CSS Day in Amsterdam. They were all clearly passionate about the web platform and I would always enjoy hearing how they went about solving problems to meet the needs of developers.
 
-So meeting people from the working group was quite inspiring for me.
-
-If it wasn't for a chat with Alan Stearns, one of the CSSWG co-chairs, at the end of CSS Day 2024 last May, this never would have happened.
+So meeting people from the working group was quite inspiring for me. And if it wasn't for a chat with Alan Stearns, one of the CSSWG co-chairs, at the end of CSS Day 2024 last May, this never would have happened.
 
 The reason why I've been able to meet so many amazing people at conferences and meetups is because we have a fantastic community around our little world of web design and development (and because I'm fortunate that my employer is willing to invest in its employees' development by sending them to training and conferences). I can't think of any other platform in software development that has this close of a relationship with its users. Anyone can participate in web standards and the web community, and there are so many ways to do it. I love it!
 
-To be a part of the CSSWG is a huge privilege. As a member, I'll be representing the BBC and our organisation's needs around accessibility, design aesthetics and layout. But on a personal level, it's exciting for me, as well, because it feels like a way to give back to the web community when it has given me so much.
+To be a part of the CSSWG is a huge privilege. As a member, I'll be representing the BBC and the organisation's needs around accessibility, design aesthetics and layout. But on a personal level, it's exciting for me, as well, because it feels like a way to give back to the web community when it has given me so much.
 
 ## Joining the W3C and CSSWG
 
-As an outsider, I'd already been quite familiar with how the CSSWG generally operated: they would discuss ideas from each other and members of the public on their [GitHub repo](https://github.com/w3c/csswg-drafts) and discuss and agree on things in [meetings with CSSWG members](https://lists.w3.org/Archives/Public/www-style/2024Aug/). Now that I was joining, I was looking forward to finding out how it worked in practice.
+As an outsider, I'd already been quite familiar with how the CSSWG generally operated: they would discuss ideas from each other and members of the public asynchronously on their [GitHub repo](https://github.com/w3c/csswg-drafts) and discuss and agree on things in [meetings with CSSWG members](https://lists.w3.org/Archives/Public/www-style/2024Aug/) synchronously. Since I was joining, I was looking forward to finding out how it worked in practice.
 
 Every member organisation of the W3C has an 'advisory committee representative' who, amongst many other things, nominates members of their organisation to join W3C working groups. The BBC's AC rep is Chris Needham. The BBC has been an active member of the W3C for a long time and we even have staff who co-chair the Media Working Group (Chris), Audio Working Group and Timed Text Working Group.
 
