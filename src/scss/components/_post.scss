@@ -3,7 +3,7 @@
     --flow-space: #{get-size(800)};
 
     /**
-     * Generic HTML styles 
+     * Generic HTML styles
      */
     h2 + *,
     h3 + * {
@@ -34,7 +34,6 @@
     }
 
     code {
-      font-size: 1.2em;
       color: var(--color-theme-primary);
       font-weight: 600;
       margin-left: 0.01ch;
@@ -53,7 +52,6 @@
       margin-left: 0;
       padding-left: get-size(500);
       font-style: italic;
-      font-size: get-size(600);
 
       p {
         opacity: 0.85;
@@ -115,7 +113,17 @@
       display: block;
       background: var(--color-dark);
       padding: get-size(700);
-      font-size: get-size(500);
+      font-size: get-size(base);
+    }
+
+    mark {
+      padding: 0.2rem 0.4rem 0.3rem 0.4rem;
+      background: var(--color-action-bg);
+      color: var(--color-action-text);
+
+      code {
+        color: inherit;
+      }
     }
   }
 
