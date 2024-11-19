@@ -47,6 +47,15 @@
       -webkit-overflow-scrolling: touch;
     }
 
+    kbd {
+      padding: 0.1rem 0.2rem 0.15rem 0.2rem;
+      background: var(--color-kbd-bg);
+      border: thin solid var(--color-kbd-border);
+      border-radius: 0.25em;
+      font: inherit;
+      color: var(--color-kbd-text);
+    }
+
     blockquote {
       border-left: 0.4rem solid var(--color-theme-primary-glare);
       margin-left: 0;

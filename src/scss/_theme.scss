@@ -13,8 +13,11 @@
   --color-selection-text: #{get-color('light')};
   --color-selection-bg: #{get-color('dark')};
   --color-stroke: #{get-color('mid')};
-  --color-action-bg: #{get-color('primary')};
   --color-action-text: #{get-color('light')};
+  --color-action-bg: #{get-color('primary')};
+  --color-kbd-text: #{get-color('dark')};
+  --color-kbd-bg: #ececec;
+  --color-kbd-border: #d3d3d3;
   --color-theme-primary: #{get-color('primary')};
   --color-theme-primary-glare: #{get-color('primary-glare')};
   --color-theme-highlight: #{get-color('highlight')};
@@ -32,6 +35,9 @@
   --color-theme-primary-glare: #{lighten(get-color('primary-glare'), 50%)};
   --color-action-bg: var(--color-theme-primary-glare);
   --color-action-text: #{get-color('dark')};
+  --color-kbd-text: #{get-color('light')};
+  --color-kbd-bg: #4a4a4a;
+  --color-kbd-border: #6a6a6a;
   --color-theme-highlight: #{get-color('highlight')};
   --color-theme-highlight-block: #{get-color('slate')};
   --color-theme-feature-text: #{get-color('highlight')};
