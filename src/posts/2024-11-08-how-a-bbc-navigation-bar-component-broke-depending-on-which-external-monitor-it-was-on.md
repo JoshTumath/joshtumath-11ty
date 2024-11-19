@@ -76,10 +76,12 @@ const isInvokedByKeyboard = event => isEnterKey(event) || isSpaceKey(event);
 // ...
 
 const toggleMenu = event => {
+  // ...
+
   if (isInvokedByMouse(event) || isInvokedByKeyboard(event)) {
     event.preventDefault();
 
-    // Do stuff to open the menu...
+    // Do stuff to open the menu and move the focus...
   }
 };
 ```
@@ -88,7 +90,7 @@ The `isInvokedByMouse` was checking whether the `click` event was invoked by a m
 
 That gave us our **final clue:** <mark>the code assumes `click` events invoked by pointers have positive `screenX` and `screenY` coordinate numbers</mark>.
 
-When a user clicked the 'more' button on a monitor with negative screen coordinates, the event handler wasn't acknowledging the click and instead falling back to the default behaviour of the 'more' button.
+When a user clicked the 'more' button on a monitor with negative screen coordinates, the event handler wasn't acknowledging the click and instead falling back to the default behaviour of the 'more' link.
 
 We could finally finish our investigation. We could deduce from our final two clues the solution: **we need to check for negative numbers as well as positive numbers when checking the `screenX` and `screenY` coordinates.**
 
@@ -105,6 +107,10 @@ const isInvokedByMouse = event =>
 
 Now everyone with weird multi-monitor layouts can enjoy the BBC website's navigation bar in peace.
 
-We should probably do further refactoring of the event handler function, since it's complicated by the fact that it also handles `keydown` events. For now, though, this fix will do just fine.
+The code is still weird, though. We don't need to be checking for whether the `click` was triggered by a mouse or keyboard. We should probably do further refactoring of the event handler function, since it's complicated by the fact that it also handles `keydown` events. For now, though, this fix will do just fine.
+
+It's a good lesson around being careful what assumptions you make around how an API works. Even the UI Events specification wasn't clear on whether there could be negative numbers in `screenX` and `screenY`. Though this code was rigorously tested both in unit tests, Puppeteer and with manual testing on various browsers, devices and assistive technology tools, the bug was never spotted.
 
 So that was fun! Who would have thought web developers could break an experience for users because of which monitor they're viewing the page on?
+
+**Edit on 2024-11-19:** There's been a lot of responses to this blog post, including confusion around why we're checking something unreliable like `screenX` in the first place. That's understandable because it is, indeed, a bit odd and seems like bad practice. I've now refactored the navigation component and significantly changed the 'menu' button's event handler. [My next blog post explains how it was refactored and answers some common questions people have had.](/posts/2024-11-18-how-i-refactored-the-bbc-navigation-bar-and-a-follow-up-faq/)
