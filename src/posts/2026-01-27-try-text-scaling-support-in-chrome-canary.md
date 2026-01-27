@@ -106,8 +106,10 @@ If you do that, you'll quickly see the problem areas. Think about how to adapt y
 
 ## What's next?
 
-There's more to think about, but hopefully that's enough to get you started! If you'd like to roll this out onto your existing website but it's too much, you can look into using the CSS `env(preferred-text-scale)` variable to support text scaling on only certain portions of your web pages.
+There's more to think about, but I hope that's enough to get you started!
 
 Hopefully the other browsers will start to support it later in the year, but I've not heard any information about it.
 
-There is one problem we're still thinking about: how do we get large text to scale at a lower rate than body text. It's great that the body text can scale up from 16px to 32px, but does heading text need to scale up from 32px to 64px? It's already huge.
+There is one problem we're still thinking about: how do we get large text to scale at a lower rate than body text. It's great that the body text can scale up from 16px to 32px, but does heading text need to scale up from 32px to 64px? It's already huge. If you have any thoughts, please do let me know!
+
+I'll be talking more about this at [CSS Day 2026 in June.](https://cssday.nl/) I hope to see you there! And I'm sure there will be more documentation published about text scaling later in the year. I think it's an area we're all lacking experience with after relying on browser zoom to keep us going for so long.
