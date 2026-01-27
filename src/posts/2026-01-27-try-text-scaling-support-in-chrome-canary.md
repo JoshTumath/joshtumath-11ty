@@ -30,7 +30,7 @@ The plan is: once you have `<meta name=text-scale>` on your page, the text will 
 
 Here's how the BBC website looks with `<meta name=text-scale>`.
 
-<img alt="Screenshot of the BBC homepage on a mobile sized viewport using the meta tag. All of the text is double the size." src="/images/2026-01-27-meta-scale-bbc-homepage.png" width="360" height="800">
+![Screenshot of the BBC homepage on a mobile sized viewport using the meta tag. All of the text is double the size.](/images/2026-01-27-meta-scale-bbc-homepage.png)
 
 ## Why do I have to enable it? Why can't browsers do it anyway?
 
