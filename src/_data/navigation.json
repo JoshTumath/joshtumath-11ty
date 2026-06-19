@@ -11,6 +11,11 @@
       "external": false
     },
     {
+      "text": "Talks",
+      "url": "/talks",
+      "external": false
+    },
+    {
       "text": "Bluesky",
       "url": "https://bsky.app/profile/joshtumath.uk",
       "external": true

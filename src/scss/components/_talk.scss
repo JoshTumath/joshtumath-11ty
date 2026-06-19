@@ -1,0 +1,39 @@
+.talk {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: get-size(300) get-size('base');
+  grid-template-areas:
+    'date title'
+    'date event'
+    'date location';
+  font-size: get-size('base');
+
+  .title {
+    grid-area: title;
+    font-size: get-size(600);
+    font-weight: 700;
+    color: var(--color-text);
+
+    & :any-link {
+      color: var(--color-theme-primary);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .date {
+    grid-area: date;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .event {
+    grid-area: event;
+  }
+
+  .location {
+    grid-area: location;
+  }
+}

@@ -18,7 +18,7 @@
       @include apply-utility('leading', 'tight');
     }
 
-    a:not([class]) {
+    :any-link:not([class]) {
       color: var(--color-dark);
       position: relative;
       background: var(--color-theme-highlight);
@@ -33,7 +33,7 @@
       }
     }
 
-    a:not([class]):hover {
+    :any-link:not([class]):hover {
       text-decoration: underline;
     }
 
