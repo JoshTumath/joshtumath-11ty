@@ -16,4 +16,4 @@ I am technically a full stack developer but really front-end who’s most intere
 
 I’m an alumnus of [Aberystwyth University](https://www.aber.ac.uk/) (class of 2016!), an amazing university by the sea, where I studied [Computer Science](https://courses.aber.ac.uk/undergraduate/computer-science-degree-with-industrial-year/).
 
-I’m also a [Christian](https://talksat.withgoogle.com/talk/making-sense-of-god-an-invitation-to-the-skeptical), a member of [City Church Manchester](http://www.citychurchmanchester.org/), a <span lang="ja">日本語学習</span> (Japanese learner), a massive [Disney Parks](https://en.wikipedia.org/wiki/Walt_Disney_Imagineering) fan and I think that [bourbon biscuits](https://en.wikipedia.org/wiki/Bourbon_biscuit) are better than custard creams!
+I’m also a [Christian](https://www.youtube.com/watch?v=4uIvOniW8xA), a member of [City Church Manchester](http://www.citychurchmanchester.org/), a <span lang="ja">日本語学習</span> (Japanese learner), a massive [Disney Parks](https://en.wikipedia.org/wiki/Walt_Disney_Imagineering) fan and I think that [bourbon biscuits](https://en.wikipedia.org/wiki/Bourbon_biscuit) are better than custard creams!
