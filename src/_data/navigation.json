@@ -16,6 +16,11 @@
       "external": false
     },
     {
+      "text": "Contact",
+      "url": "/contact",
+      "external": false
+    },
+    {
       "text": "Bluesky",
       "url": "https://bsky.app/profile/joshtumath.uk",
       "external": true

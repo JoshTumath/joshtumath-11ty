@@ -1,0 +1,10 @@
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 1rem;
+  row-rule: 1px solid var(--color-stroke);
+}
+
+dt {
+  font-style: italic;
+}
